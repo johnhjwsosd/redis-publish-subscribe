@@ -8,7 +8,7 @@ Installation
 ----
 
 <pre><code>
-go get github.com/johnhjwsosd/redis-publish/subclient
+go get github.com/johnhjwsosd/redis-publish-subscribe/subclient
 </code></pre>
 
 
@@ -20,5 +20,5 @@ Example
 	pool := redis.NewPool()
 	fmt.Println("...Lintening ...")
 	redis.SendMsg(pool, "sub1", "test")
-        go redis.Listen(pool, "sub1")
+    go redis.Listen(pool, "sub1")
 </code></pre>
