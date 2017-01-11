@@ -13,6 +13,7 @@ type redisServer struct {
 	redisAuth string
 }
 
+//NewRedis ...
 func NewRedis(redisHost, redisAuth string) *redisServer {
 	return &redisServer{redisHost, redisAuth}
 }
